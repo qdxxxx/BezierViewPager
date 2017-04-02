@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BezierRoundView">
+        <attr name="color_bez" format="color"/>
+        <attr name="color_touch" format="color"/>
+        <attr name="color_stroke" format="color"/>
+        <attr name="time_animator" format="integer"/>
+        <attr name="round_count" format="integer"/>
+        <attr name="radius" format="dimension"/>
+
+    </declare-styleable>
+</resources>
