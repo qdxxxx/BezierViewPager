@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:qdx="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/vpbg" />
+
+    <qdx.bezierviewpager_compile.vPage.BezierViewPager
+        android:id="@+id/view_page"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:overScrollMode="never" />
+
+
+    <qdx.bezierviewpager_compile.BezierRoundView
+        android:id="@+id/bezRound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_page"
+        qdx:color_bez="#fffe626d"
+        qdx:color_stroke="#ffaaaaaa"
+        qdx:color_touch="#fff"
+        qdx:radius="20dp" />
+
+
+</RelativeLayout>
