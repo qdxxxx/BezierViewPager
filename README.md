@@ -1,7 +1,7 @@
 # BezierViewPager
 ----
  ![image](https://github.com/qdxxxx/BezierViewPager/blob/master/appGif/效果图.gif)
-
+ 喜欢~~这几位姑娘~~的话，欢迎随手点个start。多谢
 ### 集成方式
 
  - 注入依赖
