@@ -1,5 +1,6 @@
 # BezierViewPager
 ----
+ ![image](https://github.com/qdxxxx/BezierViewPager/blob/master/appGif/效果图.gif)
 
 ### 集成方式
 
