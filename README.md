@@ -1,6 +1,7 @@
 # BezierViewPager
 ----
-
+ ![image](https://github.com/qdxxxx/BezierViewPager/blob/master/appGif/效果图.gif)
+ 喜欢~~这几位姑娘~~的话，欢迎随手点个star。多谢各位老铁了。
 ### 集成方式
 
  - 注入依赖
@@ -84,3 +85,9 @@ setMaxElevationFactor     | integer                 |Adapter里CardView最大的
 
 
 ---
+
+
+### Article
+---
+博客详解文章
+[http://blog.csdn.net/qian520ao/article/details/68952079](http://blog.csdn.net/qian520ao/article/details/68952079)
