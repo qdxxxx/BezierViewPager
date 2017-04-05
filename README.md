@@ -85,3 +85,9 @@ setMaxElevationFactor     | integer                 |Adapter里CardView最大的
 
 
 ---
+
+
+### Article
+---
+博客详解文章
+[http://blog.csdn.net/qian520ao/article/details/68952079](http://blog.csdn.net/qian520ao/article/details/68952079)
