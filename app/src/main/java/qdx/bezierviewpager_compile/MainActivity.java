@@ -18,22 +18,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initImgList();
+
+
         int mWidth = getWindowManager().getDefaultDisplay().getWidth();
         float heightRatio = 0.565f;  //高是宽的 0.565 ,根据图片比例
-
-        initImgList();
 
         CardPagerAdapter cardAdapter = new CardPagerAdapter(getApplicationContext());
         cardAdapter.addImgUrlList(imgList);
 
 
-        //设置阴影大小，即vPage  左右两个图片相距边框  maxFactor + 0.7*CornerRadius   *2
-        //设置阴影大小，即vPage 上下图片相距边框  maxFactor*1.5f + 0.7*CornerRadius
+        //设置阴影大小，即vPage  左右两个图片相距边框  maxFactor + 0.3*CornerRadius   *2
+        //设置阴影大小，即vPage 上下图片相距边框  maxFactor*1.5f + 0.3*CornerRadius
         int maxFactor = mWidth / 25;
         cardAdapter.setMaxElevationFactor(maxFactor);
 
         int mWidthPading = mWidth / 8;
-        int mHeightPading = (int) (mWidthPading * heightRatio - maxFactor * 0.5f / heightRatio);
+
+        //因为我们adapter里的cardView CornerRadius已经写死为10dp，所以0.3*CornerRadius=3
+        //设置Elevation之后，控件宽度要减去 (maxFactor + dp2px(3)) * heightRatio
+        //heightMore 设置Elevation之后，控件高度 比  控件宽度* heightRatio  多出的部分
+        float heightMore = (1.5f * maxFactor + dp2px(3)) - (maxFactor + dp2px(3)) * heightRatio;
+        int mHeightPading = (int) (mWidthPading * heightRatio - heightMore);
 
         BezierViewPager viewPager = (BezierViewPager) findViewById(R.id.view_page);
         viewPager.setLayoutParams(new RelativeLayout.LayoutParams(mWidth, (int) (mWidth * heightRatio)));
