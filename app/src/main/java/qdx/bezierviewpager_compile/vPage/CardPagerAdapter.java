@@ -19,7 +19,7 @@ import qdx.bezierviewpager_compile.R;
 public class CardPagerAdapter extends PagerAdapter implements CardAdapter {
 
     private List<CardView> mViews;
-    private List<String> mData;
+    private List<Object> mData;
     private Context mContext;
 
     private int MaxElevationFactor = 9;
@@ -41,7 +41,7 @@ public class CardPagerAdapter extends PagerAdapter implements CardAdapter {
         this.mContext = context;
     }
 
-    public void addImgUrlList(List<String> imgUrlList) {
+    public void addImgUrlList(List<Object> imgUrlList) {
         mData.addAll(imgUrlList);
 
         for (int i = 0; i < imgUrlList.size(); i++) {
@@ -91,7 +91,7 @@ public class CardPagerAdapter extends PagerAdapter implements CardAdapter {
         mViews.set(position, null);
     }
 
-    private void bind(String imgUrl, View view) {
+    private void bind(Object imgUrl, View view) {
         ImageView iv = (ImageView) view.findViewById(R.id.item_iv);
         Glide.with(mContext).load(imgUrl).into(iv);
 
