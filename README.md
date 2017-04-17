@@ -46,7 +46,7 @@ dependencies {
 ### Activity里面集成代码
 ```
  CardPagerAdapter cardAdapter = new CardPagerAdapter(getApplicationContext());
- cardAdapter.addImgUrlList(imgList);  //放置图片url的list
+ cardAdapter.addImgUrlList(imgList);  //放置图片url的list，v1.0.3版本imgList集合类型为List<Obj>，只要Glide支持的都可以加载
  
 BezierViewPager viewPager = (BezierViewPager) findViewById(R.id.view_page);
 viewPager.setAdapter(cardAdapter);
