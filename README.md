@@ -17,12 +17,18 @@ Step 1. Add the JitPack repository to your build file
 ```
 ```
 dependencies {
-    compile 'com.github.qdxxxx:BezierViewPager:v1.0.2'
+    compile 'com.github.qdxxxx:BezierViewPager:v1.0.3'
 }
 ```
+#### Version
+---
+ - v1.0.3  ： 相对比1.0.2降低minSdkVersion至15，```cardAdapter.addImgUrlList(List<Object> imgUrlList); ``` 方法里图片集合List字段改为Obj，可接受drawable文件资源图片/Uri/...Glide可接受即可。
+
+
+
 <br/>
 
- - xml布局代码
+### xml布局代码
 ```
     <qdx.bezierviewpager_compile.vPage.BezierViewPager
         android:id="@+id/view_page"
@@ -37,10 +43,10 @@ dependencies {
 ```
 <br/>
 
- - Activity里面集成代码
+### Activity里面集成代码
 ```
  CardPagerAdapter cardAdapter = new CardPagerAdapter(getApplicationContext());
- cardAdapter.addImgUrlList(imgList);  //放置图片url的list
+ cardAdapter.addImgUrlList(imgList);  //放置图片url的list，v1.0.3版本imgList集合类型为List<Obj>，只要Glide支持的都可以加载
  
 BezierViewPager viewPager = (BezierViewPager) findViewById(R.id.view_page);
 viewPager.setAdapter(cardAdapter);
