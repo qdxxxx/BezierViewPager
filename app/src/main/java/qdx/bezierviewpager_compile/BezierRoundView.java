@@ -44,36 +44,15 @@ public class BezierRoundView extends View implements ViewPager.OnPageChangeListe
 
         mRadius = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 15, getResources().getDisplayMetrics());  //默认设置15dp
 
-        /**
-         * 获得我们所定义的自定义样式属性
-         */
+        // 获得我们所定义的自定义样式属性
         TypedArray array = context.getTheme().obtainStyledAttributes(attrs, R.styleable.BezierRoundView, defStyleAttr, 0);
-        int n = array.getIndexCount();
-        for (int i = 0; i < n; i++) {
-            int attr = array.getIndex(i);
-            if (attr == R.styleable.BezierRoundView_color_bez) {
-                color_bez = array.getColor(i, color_bez);
-
-            } else if (attr == R.styleable.BezierRoundView_color_touch) {
-                color_touch = array.getColor(i, color_touch);
-
-            } else if (attr == R.styleable.BezierRoundView_color_stroke) {
-                color_stroke = array.getColor(i, color_stroke);
-
-            } else if (attr == R.styleable.BezierRoundView_time_animator) {
-                time_animator = array.getInteger(i, time_animator);
-
-            } else if (attr == R.styleable.BezierRoundView_round_count) {
-                default_round_count = array.getInteger(i, default_round_count);
-
-            } else if (attr == R.styleable.BezierRoundView_radius) {
-                mRadius = array.getDimensionPixelSize(attr, mRadius);
-
-            }
-
-        }
+        color_bez = array.getColor(R.styleable.BezierRoundView_color_bez, color_bez);
+        color_touch = array.getColor(R.styleable.BezierRoundView_color_touch, color_touch);
+        color_stroke = array.getColor(R.styleable.BezierRoundView_color_stroke, color_stroke);
+        time_animator = array.getInteger(R.styleable.BezierRoundView_time_animator, time_animator);
+        default_round_count = array.getInteger(R.styleable.BezierRoundView_round_count, default_round_count);
+        mRadius = array.getDimensionPixelSize(R.styleable.BezierRoundView_radius, mRadius);
         array.recycle();
-
 
         init();
     }
