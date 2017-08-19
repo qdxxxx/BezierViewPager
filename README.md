@@ -1,4 +1,5 @@
 # BezierViewPager
+[![](https://www.jitpack.io/v/qdxxxx/BezierViewPager.svg)](https://www.jitpack.io/#qdxxxx/BezierViewPager)
 ----
  ![image](https://github.com/qdxxxx/BezierViewPager/blob/master/appGif/效果图.gif)
  
