@@ -1,7 +1,6 @@
 # BezierViewPager
 [![](https://www.jitpack.io/v/qdxxxx/BezierViewPager.svg)](https://www.jitpack.io/#qdxxxx/BezierViewPager)
-[![](https://badge.juejin.im/entry/58e5b4a7ac502e4957aa46b6/likes.svg?style=flat)
-
+[![](https://badge.juejin.im/entry/58e5b4a7ac502e4957aa46b6/likes.svg?style=flat)](https://juejin.im/user/57028e8f2e958a0059237a6b)
 ----
  ![image](https://github.com/qdxxxx/BezierViewPager/blob/master/appGif/效果图.gif)
  
