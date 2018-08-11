@@ -27,7 +27,7 @@ dependencies {
 ---
  - v1.0.3  ： 相对比1.0.2降低minSdkVersion至15，```cardAdapter.addImgUrlList(List<Object> imgUrlList); ``` 方法里图片集合List字段改为Obj，可接受drawable文件资源图片/Uri/...Glide可接受即可。
  - v1.0.5  ： 删除无用的资源文件.
- - v1.0.7  ： <b>需要创建自定义图片加载方式,继承```ImageLoadClient```,项目移除Glide,图片加载由你来提供.(继承 GlideImageClient)</b>
+ - v1.0.7  ： <b>需要创建自定义图片加载方式,继承```ImageLoadClient```,项目移除Glide,图片加载由你来提供.</b>
 
 
 <br/>
