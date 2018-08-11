@@ -8,6 +8,7 @@ import android.widget.RelativeLayout;
 import java.util.ArrayList;
 import java.util.List;
 
+import qdx.bezierviewpager_compile.util.ImageLoadFactory;
 import qdx.bezierviewpager_compile.vPage.BezierViewPager;
 import qdx.bezierviewpager_compile.vPage.CardPagerAdapter;
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ImageLoadFactory.getInstance().setImageClient(new GlideImageClient());
         initImgList();
 
 
@@ -69,10 +71,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void initImgList(){
         imgList=new ArrayList<>();
-        imgList.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490984457722&di=6d7d3e20e07fc833fc606089d01132e6&imgtype=0&src=http%3A%2F%2Fimgst.izhangheng.com%2F2016%2F08%2Fnight-beauty-girl-3.jpg");
-        imgList.add("https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2946550071,381041431&fm=11&gp=0.jpg");
-        imgList.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490984320392&di=8290126f83c2a2c0d45be41e3f88a6d0&imgtype=0&src=http%3A%2F%2Ffile.mumayi.com%2Fforum%2F201307%2F19%2F152440r9ov9ololkzdcz7d.jpg");
-        imgList.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1490984407478&di=729b187f4939710e8b2436f9f1306dff&imgtype=0&src=http%3A%2F%2Ffile.mumayi.com%2Fforum%2F201505%2F05%2F172352jrr66rda0dwdwdwz.jpg");
+        imgList.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1533974978237&di=aa67212ea09517b3729c4394e6c6e92d&imgtype=jpg&src=http%3A%2F%2Fimg4.imgtn.bdimg.com%2Fit%2Fu%3D1244239179%2C175145384%26fm%3D214%26gp%3D0.jpg");
+        imgList.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1533974984588&di=3aca1b010d7b67b027b69987f3823c52&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F0%2F586364185dbc1.jpg");
+        imgList.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1533974992976&di=6bf3b70ace9b54762620cb1595b75294&imgtype=0&src=http%3A%2F%2Fwww.fahao.cc%2Fuploadfiles%2F201702%2F16%2F20170216023654105.jpg");
+        imgList.add("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1534569703&di=fa557bb817a9bc3d64be9400546cb974&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.tuwandata.com%2Fv2%2Fthumb%2Fall%2FMjAxZSwwLDAsNCwzLDEsLTEsMSw%3D%2Fu%2Fwww.tuwan.com%2Fuploads%2Fallimg%2F1503%2F04%2F765-150304143511-50.jpg");
     }
 
 

@@ -8,12 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
-
 import java.util.ArrayList;
 import java.util.List;
 
 import qdx.bezierviewpager_compile.R;
+import qdx.bezierviewpager_compile.util.ImageLoadFactory;
 
 
 public class CardPagerAdapter extends PagerAdapter implements CardAdapter {
@@ -93,7 +92,7 @@ public class CardPagerAdapter extends PagerAdapter implements CardAdapter {
 
     private void bind(Object imgUrl, View view) {
         ImageView iv = (ImageView) view.findViewById(R.id.item_iv);
-        Glide.with(mContext).load(imgUrl).into(iv);
+        ImageLoadFactory.getInstance().loadImage(iv,imgUrl,iv.getContext());
 
     }
 

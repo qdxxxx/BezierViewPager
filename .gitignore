@@ -1,9 +1,15 @@
 *.iml
 .gradle
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
+.idea
 .DS_Store
 /build
 /captures
 .externalNativeBuild
+
+appGif
+/app/src/main/java/qdx/bezierviewpager_compile/MainActivity.java
+/app/src/main/java/qdx/bezierviewpager_compile/GlideImageClient.java
+/app/src/main/res/drawable
+/app/src/main/res/layout/activity_main.xml
+
