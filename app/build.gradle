@@ -1,4 +1,4 @@
-apply plugin: 'com.android.libaray'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 25
